@@ -1,0 +1,134 @@
+body{
+    background: #585452;
+    margin: 0;
+    font-family: 'Cambay';font-size: 22px;
+    color: #383533;
+}
+
+
+
+div.topFixedBar{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #252423;
+    box-shadow: 0px 3px 10px #dedddd;
+    height: 60px;
+}
+img.topFixedBar{
+    width: 30px;
+    padding: 15px;
+    margin: 0px;
+}
+b.topFixedBar{
+    float: right;
+    height: 60px;
+    font-size: 28px;
+    padding-top: 10px;
+    padding-right: 15px;
+    color: #fff;
+}
+
+
+
+div.leftFixedBar{
+    display: none;
+    z-index: 1;
+    padding-left: 15px;
+    width: 200px;
+    max-height: 100%;
+    background: #DEDDDD;
+    overflow: auto;
+    position: fixed;
+    left: 0;
+    top: 60px;
+}
+h3.leftFixedBar{
+    color: #555;
+}
+h3.leftFixedBarRef{
+    color: #333;
+    margin: 0px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#questionShortcuts{
+    padding-bottom: 36px;
+}
+
+
+
+div.workshop{
+    width: 79%;
+    padding: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px;
+    background: #FFF;
+    box-shadow: 8px 8px 2px #444;
+}
+p.workshop{
+    margin-left: 2%;
+}
+p.workshopWhisper{
+    margin-left: 2%;
+    font-size: 16px;
+    color: #555;
+}
+button.workshop{
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    border: 0px;
+    font-family: 'Cambay';font-size: 22px;
+    font-weight: bold;
+    color: #383533;
+}
+select.workshop{
+    font-family: 'Cambay';font-size: 22px;
+    width: 50px;
+}
+textarea.workshopText{
+    margin-left: 2%;
+    width: 94%;
+    max-width: 94%;
+    min-width: 94%;
+    min-height: 28px;
+    font-family: 'Cambay';font-size: 22px;
+    height: 100%;
+    overflow: auto;
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 720px) {
+    div.workshop{
+        width: 83%;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+}
+@media screen and (max-width: 480px) {
+    div.workshop{
+        width: 85%;
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+}
+@media screen and (max-width: 320px) {
+    b.topFixedBar{
+        font-size: 25px;
+        padding-top: 13px;
+        padding-right: 10px;
+    }
+    button.workshop{
+        width: 80%;
+        margin-right: 10%;
+        margin-left: 10%;
+        margin-bottom: 10px;
+    }
+}

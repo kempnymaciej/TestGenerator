@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+Maciej Kempny - Projekt Ni 2018
+-->
+<html lang="pl">
+    <head>
+        <title>TestGenerator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Cambay' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="topFixedBar">
+            <img class="topFixedBar" src="3bars.svg" alt="1" onclick="switchLeftBar()">
+            <b class="topFixedBar" onclick="debugShowAllQuestions()">GeneratorTestów</b>   
+        </div>
+        
+        <div class="leftFixedBar">
+            <h3 class="leftFixedBarRef" onclick="generateQuestion()">Dodaj Pytanie</h3>
+            <h3 class="leftFixedBarRef" onclick="generateExportWorkshop()">Exportuj</h3>
+            <h3 class="leftFixedBarRef" onclick="newFile()">Restart</h3>
+            <h3 class="leftFixedBar">Pytania:</h3>
+                <ul id="questionShortcuts">
+                </ul>
+        </div>
+        
+        <div class="workshop">
+                
+                <form id="questionForm">
+                    <h2>Proste tworzenie testów</h2>
+                    <p class="workshop"> Maciej Kempny - Projekt Narzędzia Internetowe 2018.</p>
+                    <p class="workshop"> Naciśnij poniższy przycisk aby przejść do edytora.</p>
+                </form>
+                
+                
+                <div id="workshopButtons">
+                    <button class="workshop" onclick="generateQuestion()">Kontynuuj</button>  
+                </div>
+                
+        </div>
+
+        
+        <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+        <script src="JS/testeditorFunctions.js"></script>
+    </body>
+</html>
+

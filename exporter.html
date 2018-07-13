@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+Maciej Kempny - Projekt Ni 2018
+-->
+<html lang="pl">
+    <head>
+        <title>TestExporter</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Cambay' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="workshop">
+            <div id="workshopButtons">
+                <button class="workshop" onclick="switchKey()">Pokaż klucz</button>
+                <button class="workshop" onclick="selectContent()">Zaznacz wszystko</button>
+                <button class="workshop" onclick="reloadPage()">Odśwież</button>
+            </div>
+            
+            <div id="key">
+                <h3>Klucz:</h3>
+                <textarea readonly id="keyArea" class="workshopText" rows="1"></textarea>
+            </div>
+            
+            <h3>Twój test:</h3>
+            <div id="result">
+                
+            </div>
+            
+            <p class="workshopWhisper">*Odśwież strone aby zmienić kolejność odpowiedzi.</p>
+        </div>
+        
+        
+        <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+        <script src="JS/exporterFunctions.js"></script>
+    </body>
+</html>
